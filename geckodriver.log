@@ -1,0 +1,105 @@
+1623060382368	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7lLmeb6WtlRR"
+1623060386262	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.7lLmeb6WtlRR/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623060398148	Marionette	INFO	Listening on port 43623
+1623060398379	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623060776279	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623061433506	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HCJAnbr26H5b"
+1623061438605	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.HCJAnbr26H5b/search.json.mozlz4", (void 0)))
+1623061451546	Marionette	INFO	Listening on port 40085
+1623061451822	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623061578736	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JFkG4bCCc6FQ"
+1623061585186	Marionette	INFO	Marionette enabled
+1623061589946	Marionette	INFO	Stopped listening on port 40085
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.JFkG4bCCc6FQ/search.json.mozlz4", (void 0)))
+1623061594832	Marionette	INFO	Listening on port 40901
+1623061594945	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623061693085	Marionette	INFO	Stopped listening on port 40901
+1623061699582	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LJ9wVDBm2bmt"
+1623061702167	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.LJ9wVDBm2bmt/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623061705586	Marionette	INFO	Listening on port 37381
+1623061705642	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623061957668	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ylo4eOge3bhc"
+1623061959891	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.ylo4eOge3bhc/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623061971414	Marionette	INFO	Listening on port 45481
+1623061971890	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623061992943	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1623061994223	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1623062001954	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1623062044423	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1623062045700	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1623062107232	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1623062115187	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kICXN5GZ5YJJ"
+1623062127620	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.kICXN5GZ5YJJ/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623062147607	Marionette	INFO	Listening on port 39417
+1623062148053	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623062157529	Marionette	INFO	Stopped listening on port 43623
+1623062166091	Marionette	INFO	Stopped listening on port 37381
+1623062169435	Marionette	INFO	Stopped listening on port 39417
+1623062191438	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iBMxpVSX516a"
+1623062196571	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.iBMxpVSX516a/search.json.mozlz4", (void 0)))
+1623062201730	Marionette	INFO	Listening on port 35323
+1623062201837	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623062269652	Marionette	INFO	Stopped listening on port 35323
+1623062349911	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623069149542	Marionette	INFO	Stopped listening on port 45481
