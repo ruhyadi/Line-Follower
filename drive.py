@@ -23,10 +23,11 @@ url = "http://192.168.4.1/capture"
 
 # make opencv windows
 cv2.namedWindow('drive', cv2.WINDOW_AUTOSIZE)
+cv2.namedWindow('thresh', cv2.WINDOW_AUTOSIZE)
 
 # center x and y array
-CX = []
-CY = []
+CX = [50]
+CY = [50]
 
 # processing streaming and control
 while True:
@@ -35,7 +36,7 @@ while True:
     imgnp = np.array(bytearray(imgResponse.read()), dtype=np.uint8)
     img = cv2.imdecode(imgnp, -1)
     img = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE) # rotate 90 degree
-    img = img[0:150, :]
+    img = img[100:250, :]
 
     # IMAGE PROCESSING
     # cropping image
@@ -45,7 +46,7 @@ while True:
     # Gaussian blur
     blur = cv2.GaussianBlur(gray,(5,5),0)
     # Color thresholding
-    ret, thresh = cv2.threshold(blur,60,255,cv2.THRESH_BINARY_INV)
+    ret, thresh = cv2.threshold(blur,100,255,cv2.THRESH_BINARY_INV)
 
     # DETECTION LINE
     # Find the contours of the frame
@@ -62,9 +63,8 @@ while True:
             CX.append(cx)
             CY.append(cy)
         else:
-            backward.click()
-            # cx = CX[-1]
-            # cy = CY[-1]
+            cx = CX[-1]
+            cy = CY[-1]
 
         # draw contour
         cv2.line(img,(cx,0),(cx,720),(255,0,0),1)
@@ -87,10 +87,9 @@ while True:
         else:
             print("Oopps!")
             #backward.click()
-    else:
-        backward.click()
 
     cv2.imshow('drive', img)
+    cv2.imshow('thresh', thresh)
     key = cv2.waitKey(5)
     if key==ord('q'): # press q to quit
         break
