@@ -103,3 +103,377 @@ console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resou
 console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
 console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
 1623069149542	Marionette	INFO	Stopped listening on port 45481
+1623122129254	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.B6I4sFIlKW8Q"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122132636	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.B6I4sFIlKW8Q/search.json.mozlz4", (void 0)))
+1623122138496	Marionette	INFO	Listening on port 35917
+1623122138717	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+
+1623122176615	Marionette	INFO	Stopped listening on port 35917
+1623122179821	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hus6X3N4m4mu"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122181682	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.hus6X3N4m4mu/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122186483	Marionette	INFO	Listening on port 43341
+1623122186561	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122234654	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YYBxu1K2qa8H"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122236747	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.YYBxu1K2qa8H/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122241065	Marionette	INFO	Listening on port 46861
+1623122241076	Marionette	INFO	Stopped listening on port 43341
+1623122241105	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122354446	Marionette	INFO	Stopped listening on port 46861
+1623122356437	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WN3RTau83bbZ"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122358388	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.WN3RTau83bbZ/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122362422	Marionette	INFO	Listening on port 44627
+1623122362473	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122417557	Marionette	INFO	Stopped listening on port 44627
+1623122423713	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8yV6e1kgqcRl"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122425621	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.8yV6e1kgqcRl/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122429629	Marionette	INFO	Listening on port 33041
+1623122429751	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122452356	Marionette	INFO	Stopped listening on port 33041
+1623122453926	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vJzpbNLsJVRX"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122455984	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.vJzpbNLsJVRX/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122459935	Marionette	INFO	Listening on port 42307
+1623122459968	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122503048	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OmzCkXv0ztZO"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122505441	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.OmzCkXv0ztZO/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122509768	Marionette	INFO	Listening on port 34047
+1623122509892	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122570498	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.f6bWfrACRmRC"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122572848	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.f6bWfrACRmRC/search.json.mozlz4", (void 0)))
+1623122577138	Marionette	INFO	Listening on port 40901
+1623122577253	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623122614711	Marionette	INFO	Stopped listening on port 40901
+1623122647249	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.imMKMKdlMkx1"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122649701	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.imMKMKdlMkx1/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122654294	Marionette	INFO	Listening on port 36679
+1623122654393	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122706093	Marionette	INFO	Stopped listening on port 36679
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 829: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
+1623122709784	Marionette	INFO	Stopped listening on port 34047
+1623122713685	Marionette	INFO	Stopped listening on port 42307
+1623122791046	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KATcVxAAM9IJ"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122792962	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.KATcVxAAM9IJ/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122797039	Marionette	INFO	Listening on port 35835
+1623122797082	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122822541	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.40WFFh69xgQN"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122824499	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.40WFFh69xgQN/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122828357	Marionette	INFO	Listening on port 46567
+1623122828478	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122912761	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.V9SYnjhzmPoR"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623122914630	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.V9SYnjhzmPoR/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623122918990	Marionette	INFO	Listening on port 36953
+1623122919098	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623122968209	Marionette	INFO	Stopped listening on port 36953
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623122970861	Marionette	INFO	Stopped listening on port 46567
+1623122973925	Marionette	INFO	Stopped listening on port 35835
+1623123288512	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fLchfOlKQpRS"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623123290538	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.fLchfOlKQpRS/search.json.mozlz4", (void 0)))
+1623123294746	Marionette	INFO	Listening on port 45465
+1623123295195	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623123316131	Marionette	INFO	Stopped listening on port 45465
+1623123317241	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7LSWQz8Ym3x8"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623123319144	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.7LSWQz8Ym3x8/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623123323321	Marionette	INFO	Listening on port 46307
+1623123323383	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623123370303	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dWMZdZ10dsw3"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623123372402	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.dWMZdZ10dsw3/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623123376630	Marionette	INFO	Listening on port 44479
+1623123376742	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623123408077	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2d8XAhiTARJk"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623123410209	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.2d8XAhiTARJk/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623123415068	Marionette	INFO	Listening on port 42223
+1623123415120	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623123434076	Marionette	INFO	Stopped listening on port 42223
+1623123448189	Marionette	INFO	Stopped listening on port 44479
+1623123450857	Marionette	INFO	Stopped listening on port 46307
+1623123452739	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yeqvrZSQEcyP"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623123455122	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.yeqvrZSQEcyP/search.json.mozlz4", (void 0)))
+1623123459136	Marionette	INFO	Listening on port 39281
+1623123459181	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623123508784	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EryWSpqwMuMz"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623123510914	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.EryWSpqwMuMz/search.json.mozlz4", (void 0)))
+1623123514941	Marionette	INFO	Listening on port 43775
+1623123515023	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623123860233	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1623123915965	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1623123963321	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zw8PNArq61Xg"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623123965261	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.zw8PNArq61Xg/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623123970174	Marionette	INFO	Listening on port 40251
+1623123970267	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623124112646	Marionette	INFO	Stopped listening on port 40251
+1623124119400	Marionette	INFO	Stopped listening on port 43775
+1623124124166	Marionette	INFO	Stopped listening on port 39281
+1623124141435	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0XUJ85noMGdZ"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623124143511	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.0XUJ85noMGdZ/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623124147587	Marionette	INFO	Listening on port 37963
+1623124147674	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623124197329	Marionette	INFO	Stopped listening on port 37963
+1623124214441	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DWPgnkgO2TkR"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623124216573	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.DWPgnkgO2TkR/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623124220644	Marionette	INFO	Listening on port 44101
+1623124220681	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623124433838	Marionette	INFO	Stopped listening on port 44101
+1623124452821	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.20JSIz6m29TP"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623124454638	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.20JSIz6m29TP/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623124458909	Marionette	INFO	Listening on port 36341
+1623124458967	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623124571550	Marionette	INFO	Stopped listening on port 36341
+1623124621924	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ixn8tcA0NGRu"
+[GFX1-]: glxtest: libEGL initialize failed
+[GFX1-]: glxtest: X error, error_code=2, request_code=152, minor_code=3
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x1616
+[GFX1-]: PCI candidate 0x10de/0x1299
+[GFX1-]: glxtest: process failed (exited with status 1)
+1623124624051	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.ixn8tcA0NGRu/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1623124628396	Marionette	INFO	Listening on port 36589
+1623124628461	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 53: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1623124962194	Marionette	INFO	Stopped listening on port 36589

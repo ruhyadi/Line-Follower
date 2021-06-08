@@ -3,6 +3,7 @@ import cv2 #opencv
 import urllib.request
 import numpy as np
 from selenium import webdriver #webdriver
+import time 
 
 # webdriver object menggunakan firefox
 driver = webdriver.Firefox()
@@ -23,6 +24,10 @@ url = "http://192.168.4.1/capture"
 # make opencv windows
 cv2.namedWindow('drive', cv2.WINDOW_AUTOSIZE)
 
+# center x and y array
+CX = []
+CY = []
+
 # processing streaming and control
 while True:
     # capture streaming
@@ -30,7 +35,7 @@ while True:
     imgnp = np.array(bytearray(imgResponse.read()), dtype=np.uint8)
     img = cv2.imdecode(imgnp, -1)
     img = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE) # rotate 90 degree
-    img = img[0:260, :]
+    img = img[0:150, :]
 
     # IMAGE PROCESSING
     # cropping image
@@ -51,8 +56,15 @@ while True:
         c = max(contours, key=cv2.contourArea)
         # find center of contour
         M = cv2.moments(c)
-        cx = int(M['m10']/M['m00'])
-        cy = int(M['m01']/M['m00'])
+        if M["m00"] != 0:
+            cx = int(M['m10']/M['m00'])
+            cy = int(M['m01']/M['m00'])
+            CX.append(cx)
+            CY.append(cy)
+        else:
+            backward.click()
+            # cx = CX[-1]
+            # cy = CY[-1]
 
         # draw contour
         cv2.line(img,(cx,0),(cx,720),(255,0,0),1)
@@ -62,15 +74,21 @@ while True:
         # CONTROLING ROBOT  
         if cx >= 120:
             print ("Turn Left!")
+            time.sleep(0.25)
             turnleft.click()
-        if cx < 120 and cx > 50:
+        elif cx < 120 and cx > 50:
             print ("On Track!")
+            time.sleep(0.25)
             forward.click()
-        if cx <= 50:
+        elif cx <= 50:
             print ("Turn Right")
+            time.sleep(0.25)
             turnright.click()
         else:
-            print("It's going dark!")
+            print("Oopps!")
+            #backward.click()
+    else:
+        backward.click()
 
     cv2.imshow('drive', img)
     key = cv2.waitKey(5)
