@@ -17,6 +17,7 @@ backward = driver.find_element_by_id("backward")
 turnLedOn = driver.find_element_by_id("flash")
 turnLedOff = driver.find_element_by_id("flashoff")
 streamCamera = driver.find_element_by_id("toggle-stream")
+motorSpeed = driver.find_element_by_id("speed")
 
 # streaming url
 url = "http://192.168.4.1/capture"
@@ -74,15 +75,15 @@ while True:
         # CONTROLING ROBOT  
         if cx >= 120:
             print ("Turn Left!")
-            time.sleep(0.25)
+            # time.sleep(0.25)
             turnleft.click()
         elif cx < 120 and cx > 50:
             print ("On Track!")
-            time.sleep(0.25)
+            # time.sleep(0.25)
             forward.click()
         elif cx <= 50:
             print ("Turn Right")
-            time.sleep(0.25)
+            # time.sleep(0.25)
             turnright.click()
         else:
             print("Oopps!")
