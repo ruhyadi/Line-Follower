@@ -30,6 +30,9 @@ cv2.namedWindow('thresh', cv2.WINDOW_AUTOSIZE)
 CX = [50]
 CY = [50]
 
+# turn on LED
+# turnLedOn.click()
+
 # processing streaming and control
 while True:
     # capture streaming
@@ -38,6 +41,7 @@ while True:
     img = cv2.imdecode(imgnp, -1)
     img = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE) # rotate 90 degree
     img = img[100:250, :]
+
 
     # IMAGE PROCESSING
     # cropping image

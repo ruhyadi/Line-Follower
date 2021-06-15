@@ -268,7 +268,7 @@ static esp_err_t cmd_handler(httpd_req_t *req)
   else if (!strcmp(variable, "flash"))
   {
     // led flash variabel
-    ledcWrite(20, val);
+    ledcWrite(7, 25);
     //ledcWrite(7, val);
   }
   else if (!strcmp(variable, "flashoff"))
