@@ -385,14 +385,12 @@ static const char PROGMEM INDEX_HTML[] = R"rawliteral(
                   <tr><td></td><td align="center"><button class="button button4" id="flashoff" onclick="fetch(document.location.origin+'/control?var=flashoff&val=0');">LIGHT OFF</button></td><td></td></tr>
                   </table>
                 </div>
-               <br>
+                <br>
                 <div id="sliders" class="slider-container">
                   <table>
-                  <tr><td>Motor Speed:</td><td align="center" colspan="2"><input type="range" id="speed" min="0" max="255" value="200" onchange="try{fetch(document.location.origin+'/control?var=speed&val='+this.value);}catch(e){}"></td></tr>
+                  <tr><td>Motor Speed:</td><td align="center" colspan="2"><input type="text" id="speed" min="0" max="255" value="150" onchange="try{fetch(document.location.origin+'/control?var=speed&val='+this.value);}catch(e){}"></td></tr>
                   <tr><td>Vid Quality:</td><td align="center" colspan="2"><input type="range" id="quality" min="10" max="63" value="10" onchange="try{fetch(document.location.origin+'/control?var=quality&val='+this.value);}catch(e){}"></td></tr>
                   <tr><td>Vid Size:</td><td align="center" colspan="2"><input type="range" id="framesize" min="0" max="6" value="5" onchange="try{fetch(document.location.origin+'/control?var=framesize&val='+this.value);}catch(e){}"></td></tr>
-                  
-                  
                   </table>
                 </div>
             </section>         
@@ -530,7 +528,6 @@ void robot_right()
   // digitalWrite(LEFT_M1,LOW);
   digitalWrite(RIGHT_M0,HIGH);
   digitalWrite(RIGHT_M1,LOW);
-  //move_interval=100;
   move_interval=100;
   previous_time = millis();
 }
@@ -541,7 +538,6 @@ void robot_left()
   digitalWrite(LEFT_M1,LOW);
   digitalWrite(RIGHT_M0,LOW);
   digitalWrite(RIGHT_M1,HIGH);
-  // digitalWrite(RIGHT_M1,LOW);
   move_interval=100;
   previous_time = millis();
 }

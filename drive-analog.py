@@ -6,7 +6,9 @@ from selenium import webdriver #webdriver
 import time 
 
 # webdriver object menggunakan firefox
-driver = webdriver.Firefox()
+profile = webdriver.FirefoxProfile()                                    
+profile.set_preference("dom.forms.number", False)                       
+driver = webdriver.Firefox(profile)
 driver.get("http://192.168.4.1")
 
 # webdriver element
@@ -32,6 +34,7 @@ CY = [50]
 
 # turn on LED
 # turnLedOn.click()
+
 
 # processing streaming and control
 while True:
@@ -78,20 +81,25 @@ while True:
 
         # CONTROLING ROBOT  
         if cx >= 120:
-            print ("Turn Left!")
+            # print ("Turn Left!")
             # time.sleep(0.25)
+            motorSpeed.send_keys('100')
             turnleft.click()
         elif cx < 120 and cx > 50:
-            print ("On Track!")
+            # print ("On Track!")
             # time.sleep(0.25)
+            motorSpeed.send_keys('125')
             forward.click()
         elif cx <= 50:
-            print ("Turn Right")
+            # print ("Turn Right")
             # time.sleep(0.25)
+            motorSpeed.send_keys('100')
             turnright.click()
         else:
             print("Oopps!")
             #backward.click()
+        time.sleep(0.10)
+        motorSpeed.clear()
 
     cv2.imshow('drive', img)
     cv2.imshow('thresh', thresh)
