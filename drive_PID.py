@@ -9,19 +9,19 @@ import time
 from PID import PID_control
 
 # initiating PID parameter
-Kp = 0
-Ki = 0
-Kd = 0
+Kp = 10
+Ki = 10
+Kd = 10
 lastError = 0
+I=0
 
 # initiating speed parameter
-maxSpeed = 150
-baseSpeed = 100
+maxSpeed = 175
+baseSpeed = 125
 
 # webdriver object menggunakan firefox
-profile = webdriver.FirefoxProfile()                                    
-profile.set_preference("dom.forms.number", False)                       
-driver = webdriver.Firefox(profile)
+driver = webdriver.Firefox()
+driver.get("http://192.168.4.1")
 driver.get("http://192.168.4.1")
 
 # webdriver element
@@ -94,23 +94,24 @@ while True:
         cv2.drawContours(img, contours, -1, (0,255,0), 1)
 
         # PID
-        motorSpeed = str(PID_control(cx, Kp, Ki, Kd, maxSpeed, baseSpeed, lastError=lastError))
+        speedValue = str(PID_control(cx, Kp, Ki, Kd, maxSpeed, baseSpeed, lastError=lastError, I=I))
+        print("Speed Value:", speedValue)
         
         # CONTROLING ROBOT  
         if cx >= 160:
             # print ("Turn Left!")
             # time.sleep(0.25)
-            motorSpeed.send_keys(motorSpeed)
+            motorSpeed.send_keys(speedValue)
             turnleft.click()
         elif cx < 160 and cx > 80:
             # print ("On Track!")
             # time.sleep(0.25)
-            motorSpeed.send_keys(motorSpeed)
+            motorSpeed.send_keys(speedValue)
             forward.click()
         elif cx <= 80:
             # print ("Turn Right")
             # time.sleep(0.25)
-            motorSpeed.send_keys(motorSpeed)
+            motorSpeed.send_keys(speedValue)
             turnright.click()
         else:
             print("Oopps!")

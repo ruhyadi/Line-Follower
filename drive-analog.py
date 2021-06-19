@@ -6,9 +6,7 @@ from selenium import webdriver #webdriver
 import time 
 
 # webdriver object menggunakan firefox
-profile = webdriver.FirefoxProfile()                                    
-profile.set_preference("dom.forms.number", False)                       
-driver = webdriver.Firefox(profile)
+driver = webdriver.Firefox()
 driver.get("http://192.168.4.1")
 
 # webdriver element
@@ -84,17 +82,17 @@ while True:
         if cx >= 160:
             # print ("Turn Left!")
             # time.sleep(0.25)
-            motorSpeed.send_keys('100')
+            motorSpeed.send_keys('125')
             turnleft.click()
         elif cx < 160 and cx > 80:
             # print ("On Track!")
             # time.sleep(0.25)
-            motorSpeed.send_keys('125')
+            motorSpeed.send_keys('150')
             forward.click()
         elif cx <= 80:
             # print ("Turn Right")
             # time.sleep(0.25)
-            motorSpeed.send_keys('100')
+            motorSpeed.send_keys('125')
             turnright.click()
         else:
             print("Oopps!")

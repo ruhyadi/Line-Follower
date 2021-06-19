@@ -1,6 +1,6 @@
-def PID_control(cx, Kp, Ki, Kd, maxSpeed=150, baseSpeed=100, lastError=0):
+def PID_control(cx, Kp, Ki, Kd, maxSpeed=150, baseSpeed=100, lastError=0, I=0):
     position = cx
-    error = abs(120 - position)*-1
+    error = 120 - position
 
     P = error
     I = I + error
@@ -11,8 +11,8 @@ def PID_control(cx, Kp, Ki, Kd, maxSpeed=150, baseSpeed=100, lastError=0):
 
     if motorSpeed > maxSpeed:
         motorSpeed = maxSpeed
-    if motorSpeed < 0:
-        motorSpeed = 0
+    if motorSpeed < baseSpeed:
+        motorSpeed = baseSpeed
 
     return motorSpeed
     
