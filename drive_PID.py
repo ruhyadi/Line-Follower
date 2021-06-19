@@ -5,6 +5,19 @@ import numpy as np
 from selenium import webdriver #webdriver
 import time 
 
+# import PID
+from PID import PID_control
+
+# initiating PID parameter
+Kp = 0
+Ki = 0
+Kd = 0
+lastError = 0
+
+# initiating speed parameter
+maxSpeed = 150
+baseSpeed = 100
+
 # webdriver object menggunakan firefox
 profile = webdriver.FirefoxProfile()                                    
 profile.set_preference("dom.forms.number", False)                       
@@ -80,21 +93,24 @@ while True:
         cv2.line(img,(0,cy),(1280,cy),(255,0,0),1)
         cv2.drawContours(img, contours, -1, (0,255,0), 1)
 
+        # PID
+        motorSpeed = str(PID_control(cx, Kp, Ki, Kd, maxSpeed, baseSpeed, lastError=lastError))
+        
         # CONTROLING ROBOT  
         if cx >= 160:
             # print ("Turn Left!")
             # time.sleep(0.25)
-            motorSpeed.send_keys('100')
+            motorSpeed.send_keys(motorSpeed)
             turnleft.click()
         elif cx < 160 and cx > 80:
             # print ("On Track!")
             # time.sleep(0.25)
-            motorSpeed.send_keys('125')
+            motorSpeed.send_keys(motorSpeed)
             forward.click()
         elif cx <= 80:
             # print ("Turn Right")
             # time.sleep(0.25)
-            motorSpeed.send_keys('100')
+            motorSpeed.send_keys(motorSpeed)
             turnright.click()
         else:
             print("Oopps!")
