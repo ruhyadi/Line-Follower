@@ -4,9 +4,17 @@ import urllib.request
 import numpy as np
 from selenium import webdriver #webdriver
 import time 
+import matplotlib.pyplot as plt
 
 # import PID
 from PID import PID_control
+
+# import visualization
+import viz
+fig = plt.figure()
+ax1 = plt.subplot(111)
+
+pv = []
 
 # initiating PID parameter
 Kp = 10
@@ -97,8 +105,9 @@ while True:
         # PID
         speedValue, error = PID_control(sp, cx, Kp, Ki, Kd, maxSpeed, baseSpeed, lastError=lastError, I=I)
         print("Speed Value:", speedValue)
+        pv.append(int(error))
         speedValue = str(speedValue)
-
+        
         # CONTROLING ROBOT  
         if cx >= 160:
             # print ("Turn Left!")
@@ -127,4 +136,7 @@ while True:
     if key==ord('q'): # press q to quit
         break
 
+# tuning pid
+param = viz.pid_plot(ax1, sp, pv)
+# plot = viz.animate(fig, param)
 cv2.destroyAllWindows
