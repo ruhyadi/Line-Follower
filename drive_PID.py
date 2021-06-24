@@ -17,8 +17,8 @@ I=0
 sp = 120 # center x on camera
 
 # initiating speed parameter
-maxSpeed = 175
-baseSpeed = 125
+maxSpeed = 150
+baseSpeed = 120
 
 # webdriver object menggunakan firefox
 driver = webdriver.Firefox()
@@ -47,7 +47,7 @@ CX = [50]
 CY = [50]
 
 # turn on LED
-# turnLedOn.click()
+turnLedOn.click()
 
 
 # processing streaming and control
@@ -57,7 +57,7 @@ while True:
     imgnp = np.array(bytearray(imgResponse.read()), dtype=np.uint8)
     img = cv2.imdecode(imgnp, -1)
     img = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE) # rotate 90 degree
-    img = img[100:250, :] #led off
+    img = img[125:225, :] #led off
     # img = img[30:150, :] #led on
 
 
@@ -69,7 +69,8 @@ while True:
     # Gaussian blur
     blur = cv2.GaussianBlur(gray,(5,5),0)
     # Color thresholding
-    ret, thresh = cv2.threshold(blur,100,255,cv2.THRESH_BINARY_INV)
+    # ret, thresh = cv2.threshold(blur,100,255,cv2.THRESH_BINARY_INV)
+    thresh = cv2.adaptiveThreshold(blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,99,10)
 
     # DETECTION LINE
     # Find the contours of the frame

@@ -31,7 +31,7 @@ CX = [50]
 CY = [50]
 
 # turn on LED
-# turnLedOn.click()
+turnLedOn.click()
 
 
 # processing streaming and control
@@ -41,9 +41,8 @@ while True:
     imgnp = np.array(bytearray(imgResponse.read()), dtype=np.uint8)
     img = cv2.imdecode(imgnp, -1)
     img = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE) # rotate 90 degree
-    img = img[100:250, :] #led off
+    img = img[75:225, :] #led off
     # img = img[30:150, :] #led on
-
 
     # IMAGE PROCESSING
     # cropping image
@@ -53,7 +52,8 @@ while True:
     # Gaussian blur
     blur = cv2.GaussianBlur(gray,(5,5),0)
     # Color thresholding
-    ret, thresh = cv2.threshold(blur,100,255,cv2.THRESH_BINARY_INV)
+    # ret, thresh = cv2.threshold(blur,100,255,cv2.THRESH_BINARY_INV)
+    thresh = cv2.adaptiveThreshold(blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,99,10)
 
     # DETECTION LINE
     # Find the contours of the frame
@@ -82,17 +82,17 @@ while True:
         if cx >= 160:
             # print ("Turn Left!")
             # time.sleep(0.25)
-            motorSpeed.send_keys('125')
+            motorSpeed.send_keys('120')
             turnleft.click()
         elif cx < 160 and cx > 80:
             # print ("On Track!")
             # time.sleep(0.25)
-            motorSpeed.send_keys('150')
+            motorSpeed.send_keys('135')
             forward.click()
         elif cx <= 80:
             # print ("Turn Right")
             # time.sleep(0.25)
-            motorSpeed.send_keys('125')
+            motorSpeed.send_keys('120')
             turnright.click()
         else:
             print("Oopps!")

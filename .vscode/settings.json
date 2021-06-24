@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/didi/anaconda3/envs/robot/bin/python"
+    "python.pythonPath": "/home/didi/anaconda3/envs/robot/bin/python",
+    "jupyter.jupyterServerType": "local"
 }

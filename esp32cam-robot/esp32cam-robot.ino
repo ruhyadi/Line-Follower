@@ -15,7 +15,7 @@
 #include "soc/rtc_cntl_reg.h"
 
 // Setup Access Point Credentials
-const char* ssid1 = "ESP32-CAM Robot";
+const char* ssid1 = "Line Follower";
 const char* password1 = "1234567890";
 
 extern volatile unsigned int  motor_speed;
