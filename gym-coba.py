@@ -21,7 +21,13 @@ env = LineFollowerEnv(gui=False, nb_cam_pts=1, max_track_err=0.4,
 nb_actions = env.action_space.shape[0]
 obs = env.reset()
 space = env.observation_space
-print(obs.shape)
+print(space.shape)
+plt.imshow(obs)
+plt.show()
+# print(obs.shape)
+# input_shape=(window_length,) + env.observation_space.shape
+# print(input_shape)
+
 # print("nb_actions:", nb_actions)
 # print(space.shape)
 # print(space)
@@ -40,6 +46,19 @@ print(obs.shape)
 # actor.add(Dense(64, activation="relu"))
 # actor.add(Dense(nb_actions, activation="tanh"))
 # actor.summary()
+
+# # Critic model
+# action_input = Input(shape=(nb_actions,), name='action_input')
+# observation_input = Input(shape=(window_length,) + env.observation_space.shape, name='observation_input')
+# flattened_observation = Flatten()(observation_input)
+# x = Concatenate()([action_input, flattened_observation])
+# x = Dense(256, activation="relu")(x)
+# x = Dense(256, activation="relu")(x)
+# x = Dense(128, activation="relu")(x)
+# x = Dense(1, activation="linear")(x)
+# critic = Model(inputs=[action_input, observation_input], outputs=x)
+# critic.summary()
+
 
 # print(obs.shape)
 # plt.imshow(obs)
