@@ -6,24 +6,8 @@ from selenium import webdriver #webdriver
 import time 
 import segment
 
-# import PID
-from PID import PID_control
-
-# initiating PID parameter
-Kp = 5
-Ki = 3
-Kd = 4
-lastError = 0
-I=0
-sp = 120 # center x on camera
-
-# initiating speed parameter
-maxSpeed = 175
-baseSpeed = 130
-
 # webdriver object menggunakan firefox
 driver = webdriver.Firefox()
-driver.get("http://192.168.4.1")
 driver.get("http://192.168.4.1")
 
 # webdriver element
@@ -41,6 +25,7 @@ url = "http://192.168.4.1/capture"
 
 # make opencv windows
 cv2.namedWindow('drive', cv2.WINDOW_AUTOSIZE)
+cv2.namedWindow('thresh', cv2.WINDOW_AUTOSIZE)
 
 # center x and y array
 CX = [50]
@@ -49,7 +34,6 @@ CY = [50]
 # turn on LED
 turnLedOn.click()
 
-
 # processing streaming and control
 while True:
     # capture streaming
@@ -57,13 +41,13 @@ while True:
     imgnp = np.array(bytearray(imgResponse.read()), dtype=np.uint8)
     img = cv2.imdecode(imgnp, -1)
     img = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE) # rotate 90 degree
-    img = img[125:225, :] #led off
+    img = img[75:225, :] #led off
     # img = img[30:150, :] #led on
+    
+    # segmented
     img2 = img.copy()
 
-    # segmented
     vis, direction, pointsList, turn = segment.ImProcess(img2)
-
 
     # IMAGE PROCESSING
     # cropping image
@@ -74,7 +58,7 @@ while True:
     blur = cv2.GaussianBlur(gray,(5,5),0)
     # Color thresholding
     # ret, thresh = cv2.threshold(blur,100,255,cv2.THRESH_BINARY_INV)
-    thresh = cv2.adaptiveThreshold(blur, 100, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,99,10)
+    thresh = cv2.adaptiveThreshold(blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,99,10)
 
     # DETECTION LINE
     # Find the contours of the frame
@@ -99,26 +83,21 @@ while True:
         cv2.line(img,(0,cy),(1280,cy),(255,0,0),1)
         cv2.drawContours(img, contours, -1, (0,255,0), 1)
 
-        # PID
-        speedValue, error = PID_control(sp, cx, Kp, Ki, Kd, maxSpeed, baseSpeed, lastError=lastError, I=I)
-        print("Speed Value:", speedValue)
-        # speedValue = str(speedValue)
-
         # CONTROLING ROBOT  
-        if cx >= 150:
+        if cx >= 160:
             # print ("Turn Left!")
             # time.sleep(0.25)
-            motorSpeed.send_keys(str(speedValue+30))
+            motorSpeed.send_keys('120')
             turnleft.click()
-        elif cx < 150 and cx > 90:
+        elif cx < 160 and cx > 80:
             # print ("On Track!")
             # time.sleep(0.25)
-            motorSpeed.send_keys(str(speedValue))
+            motorSpeed.send_keys('135')
             forward.click()
-        elif cx <= 90:
+        elif cx <= 80:
             # print ("Turn Right")
             # time.sleep(0.25)
-            motorSpeed.send_keys(str(speedValue))
+            motorSpeed.send_keys('120')
             turnright.click()
         else:
             print("Oopps!")
@@ -127,6 +106,7 @@ while True:
         motorSpeed.clear()
 
     cv2.imshow('drive', vis)
+    # cv2.imshow('thresh', thresh)
     key = cv2.waitKey(5)
     if key==ord('q'): # press q to quit
         break

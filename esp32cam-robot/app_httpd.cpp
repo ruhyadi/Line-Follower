@@ -507,7 +507,7 @@ void robot_fwd()
   digitalWrite(LEFT_M1,LOW);
   digitalWrite(RIGHT_M0,HIGH);
   digitalWrite(RIGHT_M1,LOW);
-  move_interval=200;
+  move_interval=175;
   previous_time = millis();
 }
 
@@ -517,17 +517,18 @@ void robot_back()
   digitalWrite(LEFT_M1,HIGH);
   digitalWrite(RIGHT_M0,LOW);
   digitalWrite(RIGHT_M1,HIGH);
-  move_interval=250;
+  move_interval=175;
   previous_time = millis();  
 }
 
 void robot_right()
 {
   digitalWrite(LEFT_M0,LOW);
-  digitalWrite(LEFT_M1,HIGH);
+//  digitalWrite(LEFT_M1,HIGH);
+  digitalWrite(LEFT_M1,LOW);
   digitalWrite(RIGHT_M0,HIGH);
   digitalWrite(RIGHT_M1,LOW);
-  move_interval=150;
+  move_interval=175;
   previous_time = millis();
 }
 
@@ -536,7 +537,8 @@ void robot_left()
   digitalWrite(LEFT_M0,HIGH);
   digitalWrite(LEFT_M1,LOW);
   digitalWrite(RIGHT_M0,LOW);
-  digitalWrite(RIGHT_M1,HIGH);
-  move_interval=150;
+  digitalWrite(RIGHT_M1,LOW);
+  //digitalWrite(RIGHT_M1,HIGH);
+  move_interval=175;
   previous_time = millis();
 }
