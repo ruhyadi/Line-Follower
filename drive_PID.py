@@ -18,7 +18,7 @@ I=0
 sp = 120 # center x on camera
 
 # initiating speed parameter
-maxSpeed = 175
+maxSpeed = 170
 baseSpeed = 130
 
 # webdriver object menggunakan firefox
