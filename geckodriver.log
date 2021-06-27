@@ -4057,3 +4057,88 @@ console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resou
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1624796527148	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uBAsxez4kWth"
+1624796532260	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.uBAsxez4kWth/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1624796540863	Marionette	INFO	Listening on port 38863
+1624796541079	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1624796932312	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1624797260550	Marionette	INFO	Stopped listening on port 38863
+1624799930795	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MxdhleGS3vrr"
+1624799932697	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.MxdhleGS3vrr/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1624799936278	Marionette	INFO	Listening on port 43205
+1624799936336	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1624800078168	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.38R9mYizBBEB"
+1624800080639	Marionette	INFO	Marionette enabled
+1624800081151	Marionette	INFO	Stopped listening on port 43205
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.38R9mYizBBEB/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1624800085289	Marionette	INFO	Listening on port 36953
+1624800085348	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1624800102749	Marionette	INFO	Stopped listening on port 36953
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624800166840	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sMZeUzJsvdiG"
+1624800168675	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.sMZeUzJsvdiG/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1624800172351	Marionette	INFO	Listening on port 44827
+1624800172386	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1624800230931	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.z4NTH4q4t0B7"
+1624800232775	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.z4NTH4q4t0B7/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1624800236186	Marionette	INFO	Listening on port 36717
+1624800236280	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1624800308315	Marionette	INFO	Stopped listening on port 36717
+1624800308316	Marionette	INFO	Stopped listening on port 44827
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624800319490	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mDUei1hlO9d9"
+1624800321547	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile.mDUei1hlO9d9/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1624800325225	Marionette	INFO	Listening on port 41747
+1624800325283	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: http://192.168.4.1/, line 51: TypeError: n is null
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 29 of the JSON data
+1624800450662	Marionette	INFO	Stopped listening on port 41747

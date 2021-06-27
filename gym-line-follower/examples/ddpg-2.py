@@ -81,11 +81,11 @@ def train(env, name, steps=25000, pretrained_path=None):
 def test(env, path):
     agent = build_agent(env)
     agent.load_weights(path)
-    agent.test(env, nb_episodes=20, visualize=True)
+    agent.test(env, nb_episodes=5, visualize=True)
 
 if __name__ == '__main__':
     from gym_line_follower.envs import LineFollowerEnv
-    env = LineFollowerEnv(gui=False, nb_cam_pts=1, max_track_err=0.4, power_limit=0.4, 
-                        max_time=600, obsv_type="camera")
-    train(env, "ddpg_1", steps=100, pretrained_path=None)
-    test(env, "examples/trained_ddpg/weights.h5f")
+    env = LineFollowerEnv(gui=True, nb_cam_pts=8, max_track_err=0.4, power_limit=0.4, 
+                        max_time=600, obsv_type="points_latch")
+    #train(env, "ddpg_1", steps=100, pretrained_path=None)
+    test(env, "gym-line-follower/examples/trained_ddpg/weights.h5f")
